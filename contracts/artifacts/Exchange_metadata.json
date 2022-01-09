@@ -42,6 +42,45 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "exchangeRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "_amount",
 						"type": "uint256"
@@ -81,11 +120,11 @@
 	},
 	"sources": {
 		"contracts/exchange.sol": {
-			"keccak256": "0x1dc669edbf4ef36f0c6f98b7c087191e85a739f13b6759903ddd309cba861a09",
+			"keccak256": "0xbe375bcfaff5829f58a5ce48446c44037a3436b00330918492ae31bf588bd274",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c38f74e8a7d3487266f9fbb1b570e05ef0ae6ba355d5a2c75d49db3a09ba2d60",
-				"dweb:/ipfs/QmTdqWcyNg7hAdQ4a7Vgu1sHWTgaKHYTQzugn4L5gL4nAR"
+				"bzz-raw://5557fb86bd2d1b7f7aa26d8d70545a9bb68726855a8172382cc68ad9103b8453",
+				"dweb:/ipfs/QmeRdU7WtW3ePWEReu2KUbcZfjhZxb5twNcNAmg5Zszbhq"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol": {

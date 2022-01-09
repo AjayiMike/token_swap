@@ -4,8 +4,8 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 contract Exchange {
     IERC20 tokenA;
     IERC20 tokenB;
-    uint256 exchangeRate;
-    address owner;
+    uint256 public exchangeRate;
+    address public owner;
 
     constructor(address tokeAAddress_, address tokenBAddress_, uint256 exchangeRate_) {
         tokenA = IERC20(tokeAAddress_);
@@ -32,5 +32,9 @@ contract Exchange {
 
     function changeExchangeRate(uint256 _newRate) public onlyOwner {
         exchangeRate = _newRate;
+    }
+
+    function changeOwner(address _newOwner) public onlyOwner {
+        owner = _newOwner;
     }
 }
