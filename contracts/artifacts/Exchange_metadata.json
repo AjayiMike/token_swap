@@ -53,6 +53,24 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "emmergencyWithdrawal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "exchangeRate",
 				"outputs": [
@@ -76,6 +94,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "_setBuy",
+						"type": "bool"
+					}
+				],
+				"name": "setBuy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -120,11 +151,11 @@
 	},
 	"sources": {
 		"contracts/exchange.sol": {
-			"keccak256": "0xbe375bcfaff5829f58a5ce48446c44037a3436b00330918492ae31bf588bd274",
+			"keccak256": "0xe97c5f2670fee918fa79529d3c386efe9cb32f920660f842acf4e41571804e21",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5557fb86bd2d1b7f7aa26d8d70545a9bb68726855a8172382cc68ad9103b8453",
-				"dweb:/ipfs/QmeRdU7WtW3ePWEReu2KUbcZfjhZxb5twNcNAmg5Zszbhq"
+				"bzz-raw://4bcf94860744f9b843a031454cb1bf85b51bef08ec3cd7849c80a1f59a4c662b",
+				"dweb:/ipfs/QmdPYq8TELxtdZ9VzH5BAQPVS3cCAGV9qbt9u8TJfmApLi"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol": {
