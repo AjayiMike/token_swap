@@ -4,7 +4,55 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokeAAddress_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenBAddress_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "exchangeRate_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newRate",
+						"type": "uint256"
+					}
+				],
+				"name": "changeExchangeRate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "swaptokenAfortokenB",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +81,19 @@
 	},
 	"sources": {
 		"contracts/exchange.sol": {
-			"keccak256": "0xb65e987c5c9f685cbdc6c38eaf92caf391bd33bb2d66b48e65763d35dba47af9",
+			"keccak256": "0x1dc669edbf4ef36f0c6f98b7c087191e85a739f13b6759903ddd309cba861a09",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c41c1f3a894dd805449f70be77c4dc360ada95d543dc3bdc897211c33e8035e6",
-				"dweb:/ipfs/QmYrh2M7SWPgdNfEhMkQyUXWGHfDELpWAQ62VMdup5D5sF"
+				"bzz-raw://c38f74e8a7d3487266f9fbb1b570e05ef0ae6ba355d5a2c75d49db3a09ba2d60",
+				"dweb:/ipfs/QmTdqWcyNg7hAdQ4a7Vgu1sHWTgaKHYTQzugn4L5gL4nAR"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x61437cb513a887a1bbad006e7b1c8b414478427d33de47c5600af3c748f108da",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2c3d0973630ed74f2b5ce3944677a885dc70ec32fc83b35f55045a10224da32b",
+				"dweb:/ipfs/QmbefZ5RoEZKNHXCALfh683PnaNYzKPcKMFjyY1DVAgq8A"
 			]
 		}
 	},
