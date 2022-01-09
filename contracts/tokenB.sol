@@ -14,7 +14,7 @@ contract TokenB {
         _name = "tokenB";
         _symbol = "TKB";
         _decimal = decimal_;
-        _totalSupply = totalSupply_;
+        _totalSupply = totalSupply_ * (10 ** decimal_);
         _balances[msg.sender] = _totalSupply;
     }
 

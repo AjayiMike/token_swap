@@ -14,7 +14,7 @@ contract TokenA {
         _name = "tokenA";
         _symbol = "TKA";
         _decimal = decimal_;
-        _totalSupply = totalSupply_;
+        _totalSupply = totalSupply_ * (10 ** decimal_);
         _balances[msg.sender] = _totalSupply;
     }
 
